@@ -17,6 +17,7 @@
     10. Media Queries (Tablet)
     11. Media Queries (Mobile)
     12. Animations
+    13. Customizações
 
 */
 
@@ -894,9 +895,9 @@ body:not(.post-template) .post-title {
 /* Break out larger images to be wider than the main text column
    the class is applied with jQuery */
 .post-content .full-img {
-    width: 126%;
+    width: 100%;
     max-width: none;
-    margin: 0 -13%;
+    margin: 0;
 }
 
 /* The author credit area after the post */
@@ -1773,7 +1774,13 @@ body:not(.post-template) .post-title {
     }
 }
 
+/* ==========================================================================
+   13. Customizações
+   ========================================================================== */
 
+img{
+    width: 100%;
+}
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.

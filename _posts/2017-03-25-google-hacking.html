@@ -1,0 +1,84 @@
+---
+layout: post
+title:  "Google Hacking"
+date:   2017-03-25 09:48
+categories: segurança
+---
+
+<p>
+	Seguindo com o segundo POST sobre segurança da informação, Vamos falar sobre Google Hacking.
+</p>
+
+<p>
+	<img src="https://securitycommunity.tcs.com/infosecsoapbox/sites/default/files/styles/article_image_full_node/public/field/image/google-sign-dark.jpeg?itok=_yWycrGw">
+
+	Todos nós utilizamos com frequência o Google, Mas hoje existem pessoas que querem ajudar e aqueles que são mal-intencionados que utilizam esse buscar e filtrar informações para comprometer softwares ou até você mesmo que está na sua casa.
+	<br>
+	<br>
+	Agora mesmo centenas de criminosos podem estar manipulando os operadores de busca avançada do Google para de alguma forma encontrar seus dados ou novas técnologias para usar contra a sociedade praticando crimes cibérneticos.
+</p>
+
+<p>
+	Quando se faz uma pesquisa no Google, você não está pesquisando de fato na Web e sim no indice do Google na Web, como se fosse um banco de dados do que o Google conseguiu guardar da Web.
+	<br>
+	<br>
+	A tecnologia Spiders do Google, são robôs virtuais que varrem a Web buscando páginas, navegando e indexando, dai que vem a grande sacada GENIAL do Google, uma formula mágica chamada PageRank criada pelos senhores Larry Page e Sergey Brin que são os criadores do Google, O PageRank avalia critérios e classifica uma pontuação trazendo os resultados para o usuário toda organizada na tela.
+
+	<img src="https://articles-images.sftcdn.net/wp-content/uploads/sites/7/2013/05/Incluir-um-termo-na-pesquisa-do-Google.png">
+
+	Achando interessante?, e se eu te disser que existe um lugar que armazena consultas de Google Hacking. Pois é. o <a target="_blank" href="https://www.exploit-db.com/google-hacking-database/"> Exploit Database </a> tem um repositorio completo de consultas para Google Hacking, Usado por Pentesters e infelizmente por pessoas mal-intencionadas, essas consultas podem ajudar a fazer auditorias mas também revelar informações que em tese, não deveriam ser reveladas.
+
+</p>
+
+<p>
+	MAS, CADÊ O HACKING?
+	<br><br>
+	O Google nos fornece operadores para realizar pesquisas avançadas e conseguir de alguma forma criar strings especificas e assim conseguir informações a partir do titulo ou url da pagina por exemplo.
+	
+	Informações como:
+
+	Versões;
+	Mensagens de Erro;
+	Dados;
+	Cartões;
+	Documentos;
+	Senhas, Telefones;
+	Arquivos Sensíveis.
+
+	<br>
+	<br>
+
+	Vamos Conhecer Esses operadores!!!
+	<br>
+	<br>
+	Esses operadores se baseiam em uma sintaxe bem simples:
+	<br>
+	<br>
+	operador:termo_de_busca
+	<br>
+
+	<br>
+	site: Limita resultados a um site especifico; Veja Abaixo
+	<img src="http://3.bp.blogspot.com/-o54RSLA7RiA/Vj6cFlYMgiI/AAAAAAAACIM/9-MCoSdJF2I/s1600/Captura%2Bde%2Btela%2Bde%2B2015-11-07%2B22%253A47%253A19.png">
+	<p> Limito minha busca apenas no site nanoshots.com.br buscando páginas que tenham a String "uniscan" em seu escopo como no exemplo acima </p>
+	<br>
+	intitle: Pesquisa no Titulo da Página; Veja Abaixo
+	<img src="http://www.techtechnik.com/wp-content/uploads/2015/03/intitle.jpg">
+	<p> Busco em todo Google páginas que tenham no Titulo a String "hacking" </p>
+	<br>
+	inurl: Pesquisa na url da página; Veja Abaixo
+	<img src="http://1.bp.blogspot.com/-srTT4ubJmm4/Vj6dF-mZNzI/AAAAAAAACIU/4p55oYYYW8g/s1600/Captura%2Bde%2Btela%2Bde%2B2015-11-07%2B22%253A52%253A36.png">
+	<p> Aqui já fica mais interessante, busco sites que possuam o /admin na sua url, geralmente páginas de administração de softwares, wordpress e muitos outros sites utilizam essa nomeclautura para indicar a area de administração, é uma das tecnicas usadas bastante no footprint, quando o atacante está procurando um alvo. Até esse momento de acordo com a atual legislação ainda não está sendo cometido nenhum ato criminal, mas é bem suspeito.  </p>
+	<br>
+	intext: Pesquisa no conteudo do site; Veja Abaixo
+	<img src="http://2.bp.blogspot.com/-Ayk1bGJ7QSg/Vj6nbBSKevI/AAAAAAAACIk/TeYGRto7tcQ/s1600/Captura%2Bde%2Btela%2Bde%2B2015-11-07%2B23%253A37%253A43.png">
+	<p> Este Exemplo já puxa mais operadores em uma pesquisa só, ajuda filtrar ainda mais os resultados, nesse caso o usuario está querendo resultados que na url tenha a palavra "security", o tipo do arquivo seja um "pdf" e dentro do pdf tenha em pelo menos um local a palavra "Linux", Sacou?, Não é dificil, ou seja, Qualquer pessoa pode procurar e encontrar informações comprometedoras ou não, Vamos a outro exemplo.  </p>
+	<br>
+	filetype: Pesquisa por formato de arquivos (pdf, txt, doc...); Veja Abaixo
+	<img src="http://2we26u4fam7n16rz3a44uhbe1bq2.wpengine.netdna-cdn.com/wp-content/uploads/042513_0010_GoogleHacki2.jpg">
+	<p> Esse outro exemplo, é bem mais suspeito, o usuario pesquisou arquivos com o nome backup do tipo sql, ou seja, arquivo de banco de dados, e o que não faltaram foram resultados, esse resultados estão publicos, com senhas, telefones, endereços, cpf e muito mais facil do que se imagina, cartões de credito.	</p>
+</p>
+
+<p> É isso ai galera, Espero que tenham gostado, nos proximos dias irei abordar analise de vunerabilidade e irei falar de ataques men in the middle que é um dos ataques mais executados em redes wifi desprotegidas principalmente</p>
+<br>
+<p>Até Mais...</p>

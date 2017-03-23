@@ -3,11 +3,161 @@
   <channel>
     <title></title>
     <description>Sem Álibi :D</description>
-    <link>https://clizioguedes.github.io///</link>
-    <atom:link href="https://clizioguedes.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 Jan 2017 21:45:22 -0300</pubDate>
-    <lastBuildDate>Tue, 31 Jan 2017 21:45:22 -0300</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 25 Mar 2017 11:25:01 -0300</pubDate>
+    <lastBuildDate>Sat, 25 Mar 2017 11:25:01 -0300</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Google Hacking</title>
+        <description>&lt;p&gt;
+	Seguindo com o segundo POST sobre segurança da informação, Vamos falar sobre Google Hacking.
+&lt;/p&gt;
+
+&lt;p&gt;
+	&lt;img src=&quot;https://securitycommunity.tcs.com/infosecsoapbox/sites/default/files/styles/article_image_full_node/public/field/image/google-sign-dark.jpeg?itok=_yWycrGw&quot;&gt;
+
+	Todos nós utilizamos com frequência o Google, Mas hoje existem pessoas que querem ajudar e aqueles que são mal-intencionados que utilizam esse buscar e filtrar informações para comprometer softwares ou até você mesmo que está na sua casa.
+	&lt;br&gt;
+	&lt;br&gt;
+	Agora mesmo centenas de criminosos podem estar manipulando os operadores de busca avançada do Google para de alguma forma encontrar seus dados ou novas técnologias para usar contra a sociedade praticando crimes cibérneticos.
+&lt;/p&gt;
+
+&lt;p&gt;
+	Quando se faz uma pesquisa no Google, você não está pesquisando de fato na Web e sim no indice do Google na Web, como se fosse um banco de dados do que o Google conseguiu guardar da Web.
+	&lt;br&gt;
+	&lt;br&gt;
+	A tecnologia Spiders do Google, são robôs virtuais que varrem a Web buscando páginas, navegando e indexando, dai que vem a grande sacada GENIAL do Google, uma formula mágica chamada PageRank criada pelos senhores Larry Page e Sergey Brin que são os criadores do Google, O PageRank avalia critérios e classifica uma pontuação trazendo os resultados para o usuário toda organizada na tela.
+
+	&lt;img src=&quot;https://articles-images.sftcdn.net/wp-content/uploads/sites/7/2013/05/Incluir-um-termo-na-pesquisa-do-Google.png&quot;&gt;
+
+	Achando interessante?, e se eu te disser que existe um lugar que armazena consultas de Google Hacking. Pois é. o &lt;a target=&quot;_blank&quot; href=&quot;https://www.exploit-db.com/google-hacking-database/&quot;&gt; Exploit Database &lt;/a&gt; tem um repositorio completo de consultas para Google Hacking, Usado por Pentesters e infelizmente por pessoas mal-intencionadas, essas consultas podem ajudar a fazer auditorias mas também revelar informações que em tese, não deveriam ser reveladas.
+
+&lt;/p&gt;
+
+&lt;p&gt;
+	MAS, CADÊ O HACKING?
+	&lt;br&gt;&lt;br&gt;
+	O Google nos fornece operadores para realizar pesquisas avançadas e conseguir de alguma forma criar strings especificas e assim conseguir informações a partir do titulo ou url da pagina por exemplo.
+	
+	Informações como:
+
+	Versões;
+	Mensagens de Erro;
+	Dados;
+	Cartões;
+	Documentos;
+	Senhas, Telefones;
+	Arquivos Sensíveis.
+
+	&lt;br&gt;
+	&lt;br&gt;
+
+	Vamos Conhecer Esses operadores!!!
+	&lt;br&gt;
+	&lt;br&gt;
+	Esses operadores se baseiam em uma sintaxe bem simples:
+	&lt;br&gt;
+	&lt;br&gt;
+	operador:termo_de_busca
+	&lt;br&gt;
+
+	&lt;br&gt;
+	site: Limita resultados a um site especifico; Veja Abaixo
+	&lt;img src=&quot;http://3.bp.blogspot.com/-o54RSLA7RiA/Vj6cFlYMgiI/AAAAAAAACIM/9-MCoSdJF2I/s1600/Captura%2Bde%2Btela%2Bde%2B2015-11-07%2B22%253A47%253A19.png&quot;&gt;
+	&lt;p&gt; Limito minha busca apenas no site nanoshots.com.br buscando páginas que tenham a String &quot;uniscan&quot; em seu escopo como no exemplo acima &lt;/p&gt;
+	&lt;br&gt;
+	intitle: Pesquisa no Titulo da Página; Veja Abaixo
+	&lt;img src=&quot;http://www.techtechnik.com/wp-content/uploads/2015/03/intitle.jpg&quot;&gt;
+	&lt;p&gt; Busco em todo Google páginas que tenham no Titulo a String &quot;hacking&quot; &lt;/p&gt;
+	&lt;br&gt;
+	inurl: Pesquisa na url da página; Veja Abaixo
+	&lt;img src=&quot;http://1.bp.blogspot.com/-srTT4ubJmm4/Vj6dF-mZNzI/AAAAAAAACIU/4p55oYYYW8g/s1600/Captura%2Bde%2Btela%2Bde%2B2015-11-07%2B22%253A52%253A36.png&quot;&gt;
+	&lt;p&gt; Aqui já fica mais interessante, busco sites que possuam o /admin na sua url, geralmente páginas de administração de softwares, wordpress e muitos outros sites utilizam essa nomeclautura para indicar a area de administração, é uma das tecnicas usadas bastante no footprint, quando o atacante está procurando um alvo. Até esse momento de acordo com a atual legislação ainda não está sendo cometido nenhum ato criminal, mas é bem suspeito.  &lt;/p&gt;
+	&lt;br&gt;
+	intext: Pesquisa no conteudo do site; Veja Abaixo
+	&lt;img src=&quot;http://2.bp.blogspot.com/-Ayk1bGJ7QSg/Vj6nbBSKevI/AAAAAAAACIk/TeYGRto7tcQ/s1600/Captura%2Bde%2Btela%2Bde%2B2015-11-07%2B23%253A37%253A43.png&quot;&gt;
+	&lt;p&gt; Este Exemplo já puxa mais operadores em uma pesquisa só, ajuda filtrar ainda mais os resultados, nesse caso o usuario está querendo resultados que na url tenha a palavra &quot;security&quot;, o tipo do arquivo seja um &quot;pdf&quot; e dentro do pdf tenha em pelo menos um local a palavra &quot;Linux&quot;, Sacou?, Não é dificil, ou seja, Qualquer pessoa pode procurar e encontrar informações comprometedoras ou não, Vamos a outro exemplo.  &lt;/p&gt;
+	&lt;br&gt;
+	filetype: Pesquisa por formato de arquivos (pdf, txt, doc...); Veja Abaixo
+	&lt;img src=&quot;http://2we26u4fam7n16rz3a44uhbe1bq2.wpengine.netdna-cdn.com/wp-content/uploads/042513_0010_GoogleHacki2.jpg&quot;&gt;
+	&lt;p&gt; Esse outro exemplo, é bem mais suspeito, o usuario pesquisou arquivos com o nome backup do tipo sql, ou seja, arquivo de banco de dados, e o que não faltaram foram resultados, esse resultados estão publicos, com senhas, telefones, endereços, cpf e muito mais facil do que se imagina, cartões de credito.	&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt; É isso ai galera, Espero que tenham gostado, nos proximos dias irei abordar analise de vunerabilidade e irei falar de ataques men in the middle que é um dos ataques mais executados em redes wifi desprotegidas principalmente&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Até Mais...&lt;/p&gt;</description>
+        <pubDate>Sat, 25 Mar 2017 09:48:00 -0300</pubDate>
+        <link>http://localhost:4000//seguran%C3%A7a/2017/03/25/google-hacking.html</link>
+        <guid isPermaLink="true">http://localhost:4000//seguran%C3%A7a/2017/03/25/google-hacking.html</guid>
+        
+        
+        <category>segurança</category>
+        
+      </item>
+    
+      <item>
+        <title>Segurança da Informação e Seus Pilares</title>
+        <description>&lt;p&gt;
+	Hoje dou inicio a uma serie de artigos falando de uma area especifica, que é onde vou defender meu TCC, e que para alguns é chata e odiada, para outros é a mais interessante possivel, Segurança da Informação.
+&lt;/p&gt;
+
+&lt;p&gt;
+	Como meu nobre professor disse no primeiro dia de aula, &quot;Para saber se defender o profissional de segurança tem que conhecer o atacante&quot;.
+	Hoje em dia Hackers, Crackers ou piratas da internet atacam e dominam: sites; redes; servidores e softwares pelo mundo. Mas e no Brasil !?, de acordo com o estudo que foi realizado pela Kaspersky Lab em 2016, O Brasil é o país que recebe mais ataques cibernéticos da América Latina e ocupa a 9ª posição em todo o mundo. Os hackers atacam principalmente os computadores de empresas para pedir resgates, O Ransomware, que é um ataque que creseu bastante no mundo e falaremos dele em outro Post em um futuro proximo.
+&lt;/p&gt;
+
+&lt;p&gt;
+	Quem Almeja ou pretende como eu, continuar estudando e trabalhar nessa grande area, um dos pré requisitos, é pensar como pensa o atacante, Vamos enxergar situações e as maneiras de como as informações são manipuladas, e de certa forma pensar fora da caixa.
+	&lt;br&gt;
+	As tecnicas de invasão e pentests por si só geram um efeito colateral no mundo.
+	&quot;informação é um dos maiores bens da nossa era&quot;, frase utilizada por &lt;a target=&quot;_blank&quot; href=&quot;http://tecnicasdeinvasao.com/&quot;&gt; Bruno Fraga &lt;/a&gt; em muitas das suas aulas e que se encaixa bem no real contexto que as grandes empresas tem hoje, que é &quot;Quanto mais informações eu tenho, mais poder posso conquistar&quot;. 
+	&lt;br&gt;
+	No tempo feudal por exemplo, quem tinha mais terras estava no poder.
+	&lt;br&gt;
+	Na revolução industrial, quem tinha mais operarios trabalhando tinha o poder naquela época, junto com o capital.
+	&lt;br&gt;
+	Com o passar dos tempos, a informação começou a ser um dos maiores ativos e vem crescendo a cada decada que até os dias de hoje é assim.
+	Segurança da informação é uma area, um corpo de conhecimento que tem o objetivo de zelar pela informação de empresas e pessoas que ali estam armazenadas.
+
+	&lt;p&gt;
+		Temos acima os Pilares da segurança da informação
+		&lt;br&gt;
+		&lt;br&gt;
+		CONFIDENCIALIDADE - Uma informação só deve ser acessada com a autorização do dono ou responsavel tenha autorizado o acesso.
+		&lt;br&gt;
+		&lt;br&gt;
+		INTEGRIDADE - Garante que a informação tenha sua caracteristica original e sem modificações.
+		&lt;br&gt;
+		&lt;br&gt;
+		DISPONIBILIDADE - Esse pilar tem que garantir que aquela informação esteja disponivel sempre que for necessario.
+
+		&lt;img src=&quot;https://claudiododt.files.wordpress.com/2011/06/cia1.jpg&quot;&gt;
+
+		Todos esse pilares regem a segurança da informação e a deixam robusta fazendo que com esses pilares sendo seguidos, a sua e toda qualquer informação esteja 5% protegida. O que? 5%?
+		&lt;br&gt; &lt;br&gt;
+		Nenhuma tecnologia ou equipamento é mais acessivel do que uma pessoa, E se tem pessoas monitorando a segurança, com simples engenharia social e uma boa labia, atacantes podem facilmente conseguir acesso sem nem mesmo codificar uma linha de código.
+		&lt;br&gt;
+
+		&lt;img src=&quot;https://s.profissionaisti.com.br/wp-content/uploads/2014/11/pesquisa_incidentes.jpg&quot;&gt;
+
+		&lt;p&gt;
+			Esse Grafico mostra bem, que o real problema da segurança da informação são as pessoas. informações vazadas, mau uso, são apenas dois de varios outros tipos de irresponsabilidades que as se comete na proteção da informação e não apenas ataques criminosos.
+			&lt;br&gt;&lt;br&gt;
+
+			No proximo post, veremos o Google Hacking... Até lá
+		&lt;/p&gt;
+	&lt;/p&gt;
+&lt;/p&gt;</description>
+        <pubDate>Thu, 23 Mar 2017 15:07:00 -0300</pubDate>
+        <link>http://localhost:4000//seguran%C3%A7a/2017/03/23/seg-da-info-e-seus-pilares.html</link>
+        <guid isPermaLink="true">http://localhost:4000//seguran%C3%A7a/2017/03/23/seg-da-info-e-seus-pilares.html</guid>
+        
+        
+        <category>segurança</category>
+        
+      </item>
     
       <item>
         <title>Hello World!!!</title>
@@ -17,8 +167,8 @@
 
 &lt;p&gt; Melhor distribuir conhecimentos do que esconde-lo, já que todos nós somos capazes de ter ideias novas que podem ajudar o proximo e não apenas se ajudar, que é um dos pilares do trabalho em equipe.&lt;/p&gt;</description>
         <pubDate>Wed, 25 Jan 2017 07:18:00 -0300</pubDate>
-        <link>https://clizioguedes.github.io///hello-world/2017/01/25/hello-world.html</link>
-        <guid isPermaLink="true">https://clizioguedes.github.io///hello-world/2017/01/25/hello-world.html</guid>
+        <link>http://localhost:4000//hello-world/2017/01/25/hello-world.html</link>
+        <guid isPermaLink="true">http://localhost:4000//hello-world/2017/01/25/hello-world.html</guid>
         
         
         <category>hello-world</category>
